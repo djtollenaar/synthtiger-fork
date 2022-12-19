@@ -7,7 +7,7 @@ ROOT = os.path.abspath(os.path.dirname(__file__))
 
 def read_version():
     data = {}
-    path = os.path.join(ROOT, "synthtiger", "_version.py")
+    path = os.path.join(ROOT, "_version.py")
     with open(path, "r", encoding="utf-8") as fp:
         exec(fp.read(), data)
     return data["__version__"]
