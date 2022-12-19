@@ -108,9 +108,9 @@ def parse_args():
     return args
 
 
-def main():
+def main(args):
     start_time = time.time()
-    args = parse_args()
+    args = args #parse_args()
     run(args)
     end_time = time.time()
     print(f"{end_time - start_time:.2f} seconds elapsed")
